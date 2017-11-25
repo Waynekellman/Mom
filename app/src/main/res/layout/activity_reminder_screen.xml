@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nyc.mom.ReminderScreen">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:gravity="center"
+        android:textSize="17sp"/>
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Repeat" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_soft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soft Alarm" />
+        <RadioButton
+            android:id="@+id/radio_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard Alarm" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:text="hello"/>
+</LinearLayout>
